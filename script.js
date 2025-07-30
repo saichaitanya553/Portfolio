@@ -1,46 +1,44 @@
  // Mobile Menu Toggle
         const mobileMenu = document.querySelector('.mobile-menu');
         const navLinks = document.querySelector('.nav-links');
+        const navLinkItems = document.querySelectorAll('.nav-links a');
 
         mobileMenu.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
 
-        // Smooth Scrolling for Navigation Links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                navLinks.classList.remove('active');
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+        // Close mobile menu when a link is clicked
+        navLinkItems.forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                }
             });
         });
 
-        // Form Submission
+        // Form Submission Placeholder
         const contactForm = document.querySelector('.contact-form');
         contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
+            e.preventDefault(); 
             alert('Thank you for your message! I will get back to you soon.');
             contactForm.reset();
         });
 
         // Animate skills on scroll
-        const skillBars = document.querySelectorAll('.skill-progress');
-        const aboutSection = document.querySelector('#about');
+        const skillsSection = document.querySelector('#about');
+        const skillProgressBars = document.querySelectorAll('.skill-progress');
 
-        const animateSkillBars = () => {
-            const sectionPosition = aboutSection.getBoundingClientRect().top;
-            const screenPosition = window.innerHeight / 1.3;
+        const animateSkills = () => {
+            let sectionPosition = skillsSection.getBoundingClientRect().top;
+            let screenPosition = window.innerHeight / 1.5;
 
             if (sectionPosition < screenPosition) {
-                skillBars.forEach(bar => {
-                    const width = bar.parentElement.previousElementSibling.lastElementChild.textContent;
-                    bar.style.width = width;
+                skillProgressBars.forEach(bar => {
+                    const targetWidth = bar.parentElement.previousElementSibling.querySelector('span:last-child').textContent;
+                    bar.style.width = targetWidth;
                 });
+                window.removeEventListener('scroll', animateSkills);
             }
         };
 
-        window.addEventListener('scroll', animateSkillBars);
+        window.addEventListener('scroll', animateSkills, { once: true });
