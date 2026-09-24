@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P. Sai Chaitanya | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#home" class="logo">Portfolio</a>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                    <a href="resume.pdf" download="Sai_Chaitanya_Resume.pdf" class="mobile-resume-link">Download Resume</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="resume.pdf" download="Sai_Chaitanya_Resume.pdf" class="btn resume-btn">⬇ Resume</a>
+                    <div class="mobile-menu">☰</div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm <span style="color: var(--secondary);">P.Sai Chaitanya</span></h1>
+                    <h2>Aspiring Software Engineer | Full-Stack Developer | ML Enthusiast</h2>
+                    <p>I build responsive web applications and intelligent software solutions using Python, Java, JavaScript, React.js, Node.js, Flask, and modern development practices. I'm passionate about solving real-world problems through clean, scalable, and user-focused technology.</p>
+                    <div class="action-buttons">
+                        <a href="#projects" class="btn">View My Work</a>
+                        <a href="resume.pdf" download="Sai_Chaitanya_Resume.pdf" class="btn btn-outline">Download Resume</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who am I?</h3>
+                    <p>I'm an aspiring software engineer passionate about building responsive web applications, backend services, and intelligent software solutions. I work with Python, Java, JavaScript, React.js, Node.js, Flask, SQL, and MongoDB, with a strong foundation in software engineering and problem solving.</p>
+                    <p>I enjoy turning real-world problems into clean, reliable, and user-focused applications, from web platforms to AI-powered solutions. I'm continuously improving my skills in DSA, REST APIs, software development, debugging, testing, and modern development practices.</p>
+                    <div class="skills">
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Python & Java</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress-1" id="1"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>JavaScript & React.js</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress-2" id="2"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Backend & APIs</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress-3" id="3"></div>
+                            </div>
+                        </div>
+                         <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Machine Learning & AI</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress-3" id="3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- 01 — GlucoSense – Diabetes Risk Prediction -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/glucosense.png" alt="GlucoSense – AI-Powered Diabetes Screening" />
+                    </div>
+                    <div class="project-info">
+                        <h3>01 — GlucoSense – Diabetes Risk Prediction</h3>
+                        <p class="project-desc">An AI-powered diabetes risk prediction platform that analyzes health parameters to estimate diabetes risk and provide personalized lifestyle recommendations. Combines React, FastAPI, and an XGBoost model for real-time risk estimation.</p>
+                        
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Vite</span>
+                            <span class="project-tag">FastAPI</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">XGBoost</span>
+                            <span class="project-tag">Scikit-learn</span>
+                        </div>
+
+                        <ul class="project-feature-list">
+                            <li>Real-time diabetes risk prediction with percentage output via FastAPI</li>
+                            <li>Personalized lifestyle recommendations &amp; risk-level based Do's and Don'ts</li>
+                            <li>Trained on PIMA Indians Diabetes Dataset using XGBoost model architecture</li>
+                            <li>Prediction history tracking with completion timestamps &amp; responsive dashboard</li>
+                        </ul>
+
+                        <div class="project-actions">
+                            <a href="https://diabetes-risk-prediction-1-te4v.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 02 — Age & Gender Detection -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/agegender.png" alt="VisionAge – Age &amp; Gender Detection using CNN" />
+                    </div>
+                    <div class="project-info">
+                        <h3>02 — Age &amp; Gender Detection</h3>
+                        <p class="project-desc">A computer vision and deep learning application that detects faces from images and predicts both age and gender using a Convolutional Neural Network. Features MTCNN face detection and a CNN model trained on the UTKFace dataset.</p>
+                        
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">TensorFlow</span>
+                            <span class="project-tag">Keras</span>
+                            <span class="project-tag">CNN</span>
+                            <span class="project-tag">OpenCV</span>
+                            <span class="project-tag">MTCNN</span>
+                        </div>
+
+                        <ul class="project-feature-list">
+                            <li>Robust face detection and bounding box localization using MTCNN</li>
+                            <li>Simultaneous age regression &amp; gender classification via CNN</li>
+                            <li>Deep learning model trained and validated on the UTKFace dataset</li>
+                            <li>End-to-end computer vision pipeline with real-time image preprocessing</li>
+                        </ul>
+
+                        <div class="project-actions">
+                            <a href="https://age-gender-detection-jusn.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 03 — Weather Forecast -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/weather.png" alt="Weather Forecast" />
+                    </div>
+                    <div class="project-info">
+                        <h3>03 — Weather Forecast</h3>
+                        <p class="project-desc">A real-time weather forecasting application that displays live weather conditions using location-based data. Delivers interactive temperature, humidity, and wind speed insights through an intuitive and responsive user interface.</p>
+                        
+                        <div class="project-tags">
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Weather API</span>
+                            <span class="project-tag">REST API</span>
+                            <span class="project-tag">Async JS</span>
+                        </div>
+
+                        <ul class="project-feature-list">
+                            <li>Real-time weather data retrieval using location-based REST API</li>
+                            <li>Interactive display of temperature, humidity, and wind velocity</li>
+                            <li>Intuitive, responsive user interface with dynamic weather indicators</li>
+                            <li>Clean location-based search interface with responsive dynamic UI</li>
+                        </ul>
+
+                        <div class="project-actions">
+                            <a href="https://saichaitanya553.github.io/Weather_Dashboard/" target="_blank" rel="noopener noreferrer" class="btn">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <span>saichaitanya553@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <span>+91 6281419074</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <span>Hyderabad, India</span>
+                </div>
+            </div>
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" class="form-control" placeholder="your.email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" class="form-control" placeholder="Hello, I'd like to talk about..." required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/p-saichaitanya/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/saichaitanya553" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <span>GitHub</span>
+                </a>
+            </div>
+            <p>© 2026 Sai Chaitanya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

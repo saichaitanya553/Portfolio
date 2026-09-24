@@ -1,0 +1,103 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <!-- Dark background -->
+  <rect width="1200" height="675" fill="#0d1117"/>
+  <!-- Top navbar -->
+  <rect width="1200" height="56" fill="#161b22"/>
+  <text x="24" y="35" font-family="Segoe UI,sans-serif" font-size="19" font-weight="700" fill="#58a6ff">◉ Age &amp; Gender Detection</text>
+  <rect x="1100" y="16" width="80" height="28" rx="6" fill="#238636"/>
+  <text x="1140" y="34" font-family="Segoe UI,sans-serif" font-size="12" font-weight="600" fill="#fff" text-anchor="middle">Analyze</text>
+  <!-- Left panel: image with detections -->
+  <rect x="20" y="76" width="680" height="520" fill="#161b22" rx="10"/>
+  <!-- Simulated photo background -->
+  <rect x="36" y="92" width="648" height="490" fill="#1c2128" rx="8"/>
+  <!-- Person silhouette 1 (left) -->
+  <ellipse cx="230" cy="220" rx="65" ry="80" fill="#2d333b"/>
+  <ellipse cx="230" cy="155" rx="42" ry="48" fill="#383f47"/>
+  <!-- Person silhouette 2 (right) -->
+  <ellipse cx="470" cy="230" rx="60" ry="75" fill="#2d333b"/>
+  <ellipse cx="470" cy="168" rx="38" ry="44" fill="#383f47"/>
+  <!-- Bounding box 1 -->
+  <rect x="184" y="104" width="92" height="106" fill="none" stroke="#39d353" stroke-width="2.5" rx="2"/>
+  <!-- Corner accents box 1 -->
+  <line x1="184" y1="114" x2="184" y2="104" stroke="#39d353" stroke-width="3"/>
+  <line x1="184" y1="104" x2="196" y2="104" stroke="#39d353" stroke-width="3"/>
+  <line x1="276" y1="104" x2="264" y2="104" stroke="#39d353" stroke-width="3"/>
+  <line x1="276" y1="104" x2="276" y2="114" stroke="#39d353" stroke-width="3"/>
+  <line x1="184" y1="200" x2="184" y2="210" stroke="#39d353" stroke-width="3"/>
+  <line x1="184" y1="210" x2="196" y2="210" stroke="#39d353" stroke-width="3"/>
+  <line x1="276" y1="210" x2="264" y2="210" stroke="#39d353" stroke-width="3"/>
+  <line x1="276" y1="210" x2="276" y2="200" stroke="#39d353" stroke-width="3"/>
+  <!-- Label box 1 -->
+  <rect x="184" y="86" width="130" height="20" rx="3" fill="#39d353"/>
+  <text x="190" y="100" font-family="Segoe UI,sans-serif" font-size="11" font-weight="600" fill="#0d1117">Age: 27 | Male</text>
+  <!-- Bounding box 2 -->
+  <rect x="430" y="122" width="84" height="96" fill="none" stroke="#58a6ff" stroke-width="2.5" rx="2"/>
+  <!-- Corner accents box 2 -->
+  <line x1="430" y1="132" x2="430" y2="122" stroke="#58a6ff" stroke-width="3"/>
+  <line x1="430" y1="122" x2="442" y2="122" stroke="#58a6ff" stroke-width="3"/>
+  <line x1="514" y1="122" x2="502" y2="122" stroke="#58a6ff" stroke-width="3"/>
+  <line x1="514" y1="122" x2="514" y2="132" stroke="#58a6ff" stroke-width="3"/>
+  <line x1="430" y1="208" x2="430" y2="218" stroke="#58a6ff" stroke-width="3"/>
+  <line x1="430" y1="218" x2="442" y2="218" stroke="#58a6ff" stroke-width="3"/>
+  <line x1="514" y1="218" x2="502" y2="218" stroke="#58a6ff" stroke-width="3"/>
+  <line x1="514" y1="218" x2="514" y2="208" stroke="#58a6ff" stroke-width="3"/>
+  <!-- Label box 2 -->
+  <rect x="430" y="104" width="130" height="20" rx="3" fill="#58a6ff"/>
+  <text x="436" y="118" font-family="Segoe UI,sans-serif" font-size="11" font-weight="600" fill="#0d1117">Age: 34 | Female</text>
+  <!-- Scan line animation visual -->
+  <rect x="36" y="310" width="648" height="2" fill="#39d353" opacity="0.4"/>
+  <rect x="36" y="92" width="648" height="490" fill="url(#scangrad)" opacity="0.05"/>
+  <defs>
+    <linearGradient id="scangrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#39d353"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+  </defs>
+  <!-- Bottom label: 2 faces detected -->
+  <rect x="36" y="548" width="648" height="28" fill="#161b22" rx="4"/>
+  <text x="56" y="567" font-family="Segoe UI,sans-serif" font-size="13" fill="#39d353">✓ 2 faces detected  ·  Model: CNN  ·  Dataset: UTKFace</text>
+  <!-- Right panel: results -->
+  <rect x="716" y="76" width="466" height="520" fill="#161b22" rx="10"/>
+  <text x="740" y="112" font-family="Segoe UI,sans-serif" font-size="15" font-weight="600" fill="#e6edf3">Detection Results</text>
+  <rect x="736" y="122" width="426" height="1" fill="#30363d"/>
+  <!-- Face result 1 -->
+  <rect x="736" y="134" width="426" height="100" fill="#1c2128" rx="8"/>
+  <rect x="752" y="148" width="68" height="72" fill="#2d333b" rx="6"/>
+  <ellipse cx="786" cy="172" rx="20" ry="24" fill="#383f47"/>
+  <ellipse cx="786" cy="150" rx="13" ry="15" fill="#444c56"/>
+  <rect x="836" y="148" width="88" height="22" rx="11" fill="#1a4231"/>
+  <text x="880" y="163" font-family="Segoe UI,sans-serif" font-size="12" font-weight="600" fill="#39d353" text-anchor="middle">Male</text>
+  <text x="836" y="196" font-family="Segoe UI,sans-serif" font-size="22" font-weight="700" fill="#e6edf3">27 yrs</text>
+  <text x="836" y="216" font-family="Segoe UI,sans-serif" font-size="11" fill="#8b949e">Predicted Age</text>
+  <text x="1060" y="175" font-family="Segoe UI,sans-serif" font-size="11" fill="#8b949e">Confidence</text>
+  <text x="1060" y="200" font-family="Segoe UI,sans-serif" font-size="20" font-weight="700" fill="#39d353">94%</text>
+  <!-- Face result 2 -->
+  <rect x="736" y="248" width="426" height="100" fill="#1c2128" rx="8"/>
+  <rect x="752" y="262" width="68" height="72" fill="#2d333b" rx="6"/>
+  <ellipse cx="786" cy="286" rx="20" ry="24" fill="#383f47"/>
+  <ellipse cx="786" cy="264" rx="13" ry="15" fill="#444c56"/>
+  <rect x="836" y="262" width="88" height="22" rx="11" fill="#1a2d4a"/>
+  <text x="880" y="277" font-family="Segoe UI,sans-serif" font-size="12" font-weight="600" fill="#58a6ff" text-anchor="middle">Female</text>
+  <text x="836" y="310" font-family="Segoe UI,sans-serif" font-size="22" font-weight="700" fill="#e6edf3">34 yrs</text>
+  <text x="836" y="330" font-family="Segoe UI,sans-serif" font-size="11" fill="#8b949e">Predicted Age</text>
+  <text x="1060" y="289" font-family="Segoe UI,sans-serif" font-size="11" fill="#8b949e">Confidence</text>
+  <text x="1060" y="314" font-family="Segoe UI,sans-serif" font-size="20" font-weight="700" fill="#58a6ff">91%</text>
+  <!-- Model info -->
+  <rect x="736" y="370" width="426" height="1" fill="#30363d"/>
+  <text x="736" y="400" font-family="Segoe UI,sans-serif" font-size="13" font-weight="600" fill="#e6edf3">Model Architecture</text>
+  <text x="736" y="424" font-family="Segoe UI,sans-serif" font-size="12" fill="#8b949e">Architecture:  CNN (Convolutional Neural Network)</text>
+  <text x="736" y="446" font-family="Segoe UI,sans-serif" font-size="12" fill="#8b949e">Face Detection:  MTCNN</text>
+  <text x="736" y="468" font-family="Segoe UI,sans-serif" font-size="12" fill="#8b949e">Dataset:  UTKFace Dataset</text>
+  <text x="736" y="490" font-family="Segoe UI,sans-serif" font-size="12" fill="#8b949e">Framework:  TensorFlow / Keras</text>
+  <!-- Tech tags -->
+  <rect x="736" y="530" width="66" height="22" rx="11" fill="#1c2d1c"/>
+  <text x="769" y="545" font-family="Segoe UI,sans-serif" font-size="11" fill="#39d353" text-anchor="middle">TensorFlow</text>
+  <rect x="810" y="530" width="50" height="22" rx="11" fill="#1c2b3a"/>
+  <text x="835" y="545" font-family="Segoe UI,sans-serif" font-size="11" fill="#58a6ff" text-anchor="middle">Keras</text>
+  <rect x="868" y="530" width="58" height="22" rx="11" fill="#2a1f1c"/>
+  <text x="897" y="545" font-family="Segoe UI,sans-serif" font-size="11" fill="#f0883e" text-anchor="middle">OpenCV</text>
+  <rect x="934" y="530" width="56" height="22" rx="11" fill="#1e2a1e"/>
+  <text x="962" y="545" font-family="Segoe UI,sans-serif" font-size="11" fill="#3fb950" text-anchor="middle">MTCNN</text>
+  <rect x="998" y="530" width="42" height="22" rx="11" fill="#261c1c"/>
+  <text x="1019" y="545" font-family="Segoe UI,sans-serif" font-size="11" fill="#f85149" text-anchor="middle">CNN</text>
+</svg>
